@@ -1,0 +1,36 @@
+{
+  "authors": "https://github.com/aaronmaturen/angular-recorder-directive/graphs/contributors",
+  "name": "angular-audio-directive",
+  "description": "angular-audio-directive - An AngularJS directive to easily record audio",
+  "version": "0.0.1",
+  "homepage": "https://github.com/aaronmaturen/angular-recorder-directive/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaronmaturen/angular-recorder-directive/"
+  },
+  "keywords": [
+    "angularjs",
+    "audio",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-cli": "latest",
+    "grunt": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-karma": "latest",
+    "jasmine-node": "latest",
+    "grunt-ngmin": "latest",
+    "karma": "latest",
+    "karma-ng-scenario": "latest"
+  },
+  "scripts": {
+    "test": "grunt travis --verbose"
+  }
+}

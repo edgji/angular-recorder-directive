@@ -1,11 +1,32 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html ng-app="demoapp">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
-    <script src="../dist/angular-recorder-directive.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+    <script src="../dist/angular-recorder-directive.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" />
+    <script>
+        var app = angular.module("demoapp", ["recorder-directive"]);
+        app.controller("DemoController", ["$scope", function($scope){
+            // tra la la
+        }]);
+    </script>
 
+</head>
+<body ng-controller="DemoController">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <recorder>
+                    <div id="flash-approval"></div>
+                    {{status}} - {{volume}}
+                    <button class="btn btn-primary" id="startRecording" ng-click="startRecording()">start recording</button>
+                    <button class="btn btn-primary" id="stopRecording" ng-click="stopRecording()">stop recording</button>
+                    <ul>
+                        <li ng-repeat="recording in recordings">{{recording.id}}</audio></hi>
+                    </ul>
+                </recorder>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
